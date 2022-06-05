@@ -109,8 +109,8 @@ namespace TechnicalTask.Controllers
                         }
                         await _context.SaveChangesAsync();
                     }
-                    
-                    return CreatedAtAction("Done!", countriesData);
+
+                    return NoContent();
                 }
             }
         }
